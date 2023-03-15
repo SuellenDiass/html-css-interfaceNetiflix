@@ -1,0 +1,125 @@
+/* Estilização da página */
+/* Criando variaveis */
+:root{
+    --vermelho: #e50914;
+    --preta: #141414;
+}
+
+/* Regras de formatação para navegadores, reset css */
+*{
+    margin: 0;
+    padding: 0;
+    /* elementos em tela respeitar o tamanho da caixa */
+    box-sizing: border-box;
+    
+}
+body{
+    background: var(--preta);
+    font-family: 'Kanit', Times, serif; /* mudar fonte */
+    color: white;
+
+}
+/* Alinhando os item do container */
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+}
+/* Logo */
+header .logo{
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-family: 'Kanit', Times;
+    font-size: 40px;
+}
+header nav a{
+    text-decoration: none;
+    color:#AAA ;
+    margin-right: 10px;
+
+}
+/* Efeito mouse */
+header nav a:hover{
+    color: #fff;
+
+}
+/* Filme principal */
+.filme-principal{
+    font-size: 16px;
+    background:linear-gradient(rgba(0,0,0, .50),rgba(0,0,0, .50)100%), url('/img/wandinha.jpg');
+   
+    height: 400px;
+    background-size: cover;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+/* Espaçamento botões */
+.filme-principal .descricao{
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+.filme-principal .titulo{
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+/* Estilizando botões */
+.botao{
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+    
+    padding: 15px 30px;
+    margin-right:15px ;
+    font-size: 12px;
+
+    cursor: pointer;
+    transition: .3s ease all;
+}
+.botao:hover{
+    background: white;
+    color: black;
+}
+/* Espaçamento dos icons */
+.botao i{
+    margin-right: 8px;
+}
+/* botao informaçoes */
+
+.inserir-informacoes{
+    background: gray;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    display: none;  /* esconde elemento */
+   /*  visibility: hidden; */
+    margin-top: 10px;
+}
+/* Espaçamento de todos os elementos da página de uma vez */
+.container{
+    margin-left: 20px;
+}
+/* auterações não afetam o titulo */
+.filme-principal .container{
+    /* espaço do texto ocupara texto não ultrapassa toda tela */
+    width: 70%;
+}
+/* configurando tamanho da imagens do carrosel */
+/* mudei de % para rem , as imagens não estavam respeitando a caixa do carrossel*/
+.box-filme{
+    /* height:100% ;
+    width:100% ; */
+    height:15rem ;
+    width:10rem ;
+    display: block;
+}
+/* alterando a largura carrosel */
+.carrosel-filmes{
+    margin-top: 5px;
+   
+}

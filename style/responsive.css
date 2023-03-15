@@ -1,0 +1,63 @@
+/* Responsividade */
+
+@media screen and (max-width:600px){
+    header .container{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .box-filme{
+        padding-left: 25px;
+        padding-right: 60px;
+    } 
+    .botao{
+        margin-top: 5px;
+        width: 300px;
+    }
+    .inserir-informacoes{
+        margin-top: 5px;
+        width: 300px;
+        margin-bottom: 54px;
+    }
+    
+}
+@media screen and (max-width:375px){
+    header .container{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .box-filme{
+        height:8rem ;
+        width:10rem ;
+        
+    }
+    .botao{
+        margin-top: 5px;
+        width: 300px;
+    }
+    .inserir-informacoes{
+        margin-top: 5px;
+        width: 300px;
+        margin-bottom: 54px;
+    }
+    
+}
+
+
+
+/* responsividade da descrição */
+
+@media screen and (min-width:1000px){
+    .descricao{
+        width: 50%;
+    }
+    .inserir-informacoes{
+        margin-top: 5px;
+        width: 300px;
+        margin-bottom: 54px;
+    }
+}
+
+
+    
